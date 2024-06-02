@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/sample_image"/>
+    
+    <RelativeLayout
+        android:id="@+id/rlName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Centered TextView -->
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:paddingLeft="30dp"
+            android:paddingEnd="30dp"
+            android:layout_centerInParent="true"
+            android:text="Hello, World!"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <!-- Top-left ImageView -->
+        <ImageView
+            android:id="@+id/top_left_image"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignTop="@id/textName"
+            android:layout_toStartOf="@id/textName"
+            android:src="@drawable/ic_delete"
+            android:contentDescription="Top Left Image"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <!-- Top-right ImageView -->
+        <ImageView
+            android:id="@+id/top_right_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@id/textName"
+            android:layout_toEndOf="@id/textName"
+            android:src="@drawable/ic_delete"
+            android:contentDescription="Top Right Image"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <!-- Bottom-left ImageView -->
+        <ImageView
+            android:id="@+id/bottom_left_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/textName"
+            android:layout_toStartOf="@id/textName"
+            android:src="@drawable/ic_delete"
+            android:contentDescription="Bottom Left Image"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp" />
+
+        <!-- Bottom-right ImageView -->
+        <ImageView
+            android:id="@+id/bottom_right_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/textName"
+            android:layout_toEndOf="@id/textName"
+            android:src="@drawable/ic_delete"
+            android:contentDescription="Bottom Right Image"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+
+    
+
+</RelativeLayout>
