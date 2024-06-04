@@ -56,6 +56,8 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
 
     implementation(libs.timber)
+    implementation(libs.gson)
+    implementation(libs.glide)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
